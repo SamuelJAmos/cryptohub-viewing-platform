@@ -1,3 +1,9 @@
+# Crypto project which will be utilizing react.js, tailwind, and firebase.
+
+Further practice in react, use of state, context, API's security, login practices, creating a live page...
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
