@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
-import { Sparklines, SparklinesLine } from "react-sparklines";
-import { FaTwitter, FaFacebook, FaReddit, FaGithub } from "react-icons/fa";
-import DOMPurify from "dompurify";
-import { useParams } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import { Sparklines, SparklinesLine } from 'react-sparklines';
+import { FaTwitter, FaFacebook, FaReddit, FaGithub } from 'react-icons/fa';
+import DOMPurify from 'dompurify'
+import { useParams } from 'react-router-dom';
 
 const CoinPage = () => {
   const [coin, setCoin] = useState({});
@@ -15,7 +15,7 @@ const CoinPage = () => {
   useEffect(() => {
     axios.get(url).then((response) => {
       setCoin(response.data);
-      // console.log(response.data)
+      console.log(response.data);
     });
   }, [url]);
 
