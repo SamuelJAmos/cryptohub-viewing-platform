@@ -18,7 +18,7 @@ const Navbar = () => {
       <div className='hidden md:block'>
         <ThemeToggle />
       </div>
-        <div>
+        <div className='hidden md:block'>
           <Link to='/account' className='p-4'>
             Account
           </Link>
