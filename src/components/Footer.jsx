@@ -53,7 +53,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="text-center py-4">Powered by the all mighty Coin Gecko</p>
+      <p className="text-center py-4">Powered by the almighty Coin Gecko</p>
     </div>
   );
 };
