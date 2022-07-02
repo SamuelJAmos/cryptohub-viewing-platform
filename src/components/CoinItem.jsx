@@ -1,10 +1,20 @@
 import React, { useState } from 'react';
+import { AiFillStar, AiOutlineStar } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import { Sparklines, SparklinesLine } from 'react-sparklines';
 
 const CoinItem = ({ coin }) => {
+  const [savedCoin, setSavedCoin] = useState(false);
+
+  const saveCoin = async () => {
+   
+  };
+
   return (
     <tr className='h-[80px] border-b overflow-hidden'>
+      <td onClick={saveCoin}>
+        {savedCoin ? <AiFillStar /> : <AiOutlineStar />}
+      </td>
       <td>{coin.market_cap_rank}</td>
       <td>
         <Link to={`/coin/${coin.id}`}>
